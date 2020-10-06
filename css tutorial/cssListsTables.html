@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Lists And Tables</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<body class="color-tauve">
+
+    <div class="header color-smth">
+      <h1 style="text-align: center;">
+        <a name="Main">
+          CSS Lists and Tables
+        </a>
+      </h1>
+      <p>Using CSS properties to style Lists and Tables</p>
+    </div>
+
+    <div class="topnav">
+			<a style="color:#DD6363" href="./main.html">Home</a>
+      <a style="color:#DD6363" href="./cssText.html">Text CSS</a>
+      <a style="color:#DD6363" href="./cssBackground.html">Background CSS</a>
+      <a style="color:#DD6363" href="./cssListsTables.html">Lists & Table CSS</a>
+      <a style="color:#DD6363" href="./cssDivLayout.html">Div CSS</a>
+      <a style="color:#DD6363" href="./cssIcons.html">Icons & Links CSS</a>
+      <a style="color:#DD6363" href="./tutorial_assignment.html">Assignment</a>
+      <a style="color:#DD6363" href="https://forms.gle/ZHz1iKrNYEn3wgi36">Quiz</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div style="color:#FBF7F4" class="card color-cpenny">
+          <h2>TABLE OF CONTENTS</h2>
+          <h5>on this page, we discuss:</h5>
+          <p>
+            <a class="toc" href="#lists">lists</a><br>
+            <a class="toc" href="#table">tables</a><br>
+          </p>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+				<div style="color:#FBF7F4" class="card color-cpenny">
+            <h2>
+              <a name="lists">Lists</a>
+            </h2>
+            <p>In HTML, there are three types of lists. Two of the main types that are most commonly used are:</p>
+						<ul type="square">
+							<li>unordered lists <code style="background-color: beige; color: #DD6363;">&lt;ul&gt;</code> where the list items are marked with bullets.</li>
+							<li>ordered lists <code style="background-color: beige; color: #DD6363;">&lt;ol&gt;</code> where the list items are marked with either numbers or letters</li>
+						</ul>
+						<p>The third type is definition lists that will not be discussed here.</p>
+						<br>
+						<p>The CSS list properties allows one to:</p>
+						<ul type="square">
+							<li>Set different list item markers for ordered and unordered lists</li>
+							<li>Set an image as the list item marker</li>
+							<li>Add background colors to lists and list items</li>
+						</ul>
+						<br>
+						<h4>Different Lists Item Markers</h4>
+						<p>The <code style="background-color: beige; color: #DD6363;">list-style-type</code> property specifies the type of list item marker.<br><br><b>For example:</b></p>
+
+						<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+							&lt;ul style:"list-style-type: cirlce;"&gt;<br>
+									&lt;li&gt;Killua Zoldyck&lt;/li&gt;<br>
+									&lt;li&gt;Gon Freecs&lt;/li&gt;<br>
+							&lt;/ul&gt;<br>
+							&lt;ol style="list-style-type: upper-roman;"&gt;<br>
+									&lt;li&gt;Miya Atsumu&lt;/li&gt;<br>
+									&lt;li&gt;Miya Osamu&lt;/li&gt;<br>
+							&lt;/ol&gt;
+							</code></p>
+							<br>
+							<p><b>Output:</b></p>
+
+							<div class="card"  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px;">
+								<p>unordered list: </p>
+							<ul style:"list-style-type: cirlce;">
+									<li>Killua Zoldyck</li>
+									<li>Gon Freecs</li>
+							</ul><br>
+							<p>ordered list:</p>
+							<ol style="list-style-type: upper-roman;">
+									<li>Miya Atsumu</li>
+									<li>Miya Osamu</li>
+							</ol>
+						</div>
+						<br>
+
+						<h4>Image as The List Item Marker</h4>
+						<p>The <code style="background-color: beige; color: #DD6363;">list-style-image</code> property specifies an image as the list item marker.<br><br><b>For example:</b></p>
+
+						<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+							&lt;ul style="list-style-image: url('https://bit.ly/3asTkV9')"&gt;<br>
+							&lt;li&gt;inarizaki&lt;/li&gt;<br>
+							&lt;li&gt;itachiyama&lt;/li&gt;<br>
+							&lt;/ul&gt;
+						</code></p>
+
+						<br>
+						<p><b>Output:</b></p>
+
+						<div class="card"  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px;">
+							<ul style="list-style-image: url('https://bit.ly/3asTkV9')">
+							<li>inarizaki</li>
+							<li>itachiyama</li>
+							</ul>
+						</div>
+						<br>
+
+						<h4>List - Shorthand property</h4>
+						<p>The <code style="background-color: beige; color: #DD6363;">list-style-image</code> property is a shorthand property that is used to set all the list properties in one declaration. <br><br><b>For Example:</b></p>
+
+						<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+							ul {list-style: square inside url("https://bit.ly/3asTkV9");}
+						</code></p>
+						<br>
+						<p>When using the shorthand property, the order of the property values are:</p>
+						<ul type="square">
+							<li><code style="background-color: beige; color: #DD6363;">list-style-type</code> (if this is specified, the value of this property will be displayed if the image id unable to be displayed)</li>
+							<li><code style="background-color: beige; color: #DD6363;">list-style-position</code> (it specifies whether the list-item markers should appear inside or outside the content flow)</li>
+							<li><code style="background-color: beige; color: #DD6363;">list-style-image</code></li>
+							</ul>
+							<p>If any one of the property values above are missing, the default value for the missing property will be inserted, if any.</p>
+
+						<br>
+						<h4>Styling List With Colors</h4>
+						<p>One can even style the lists using colors to make it look as desired. Anything that is added to the <code style="background-color: beige; color: #DD6363;"> &lt;ol&gt;</code> and <code style="background-color: beige; color: #DD6363;"> &lt;ul&gt;</code> tags affects the whole list while properties added to the <code style="background-color: beige; color: #DD6363;">&lt;li&gt;</code> tag affects the individual list items.
+						<br><br><b>For example:</b></p>
+
+						<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+							&lt;ol style="background-color:#302827; padding: 20px;"&gt;<br>
+									&lt;li style="background-color:#E5B2FF;"&gt;derse&lt;/li&gt;<br>
+									&lt;li style="background-color:#FFFEB2;"&gt;prospit&lt;/li&gt;<br>
+							&lt;/ol&gt;
+						</code></p>
+
+						<p><b>Output:</b></p>
+
+						<div class="card"  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px;">
+							<ol style="background-color:#302827; padding: 20px;">
+									<li style="background-color:#E5B2FF;">derse</li>
+									<li style="background-color:#FFFEB2;">prospit</li>
+							</ol>
+						</div>
+
+						<br>
+					</div>
+
+        <div style="color:#FBF7F4" class="card color-cpenny">
+          <h2><a name="table">Tables</a></h2>
+          <p>CSS can be used to greatly improve the design of tables made with HTML.</p>
+					<br>
+					<h4>Table Borders</h4>
+					<p>The <code style="background-color: beige; color: #DD6363;">border</code> property is used to specify the borders of a table in CSS.</p>
+					<p><b>For Example:</b></p>
+					<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+						table, th, td {border: 1px solid black;}
+					</code></p>
+					<p><b>Output:</b></p>
+					<div class="card"  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px;">
+						<table style="border: 1px solid black;">
+							<tr>
+								<th style="border: 1px solid black;">Last Name</th>
+								<th style="border: 1px solid black;">First Name</th>
+							</tr>
+							<tr>
+								<td style="border: 1px solid black;">Miya</td>
+								<td style="border: 1px solid black;">Atsumu</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid black;">Miya</td>
+								<td style="border: 1px solid black;">Osamu</td>
+							</tr>
+						</table>
+					</div>
+					<p>The above example has double borders because both the table and the <code style="background-color: beige; color: #DD6363;">&lt;th&gt;</code> and <code style="background-color: beige; color: #DD6363;">&lt;td&gt;</code> elements have seperate borders.</p>
+					<br>
+					<h4>Collapsing Borders</h4>
+					<p>The <code style="background-color: beige; color: #DD6363;">border-collapse</code> property sets whether the table borders should be collapsed into a single border</p>
+					<p><b>For Example:</b></p>
+					<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+						table {border-collapse: collapse;}<br>
+						table, th, td {border: 1px solid black;}
+					</code></p>
+					<p><b>Output:</b></p>
+					<div class="card"  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px;">
+						<table style="border: 1px solid black; border-collapse: collapse;">
+							<tr>
+								<th style="border: 1px solid black;">Last Name</th>
+								<th style="border: 1px solid black;">First Name</th>
+							</tr>
+							<tr>
+								<td style="border: 1px solid black;">Miya</td>
+								<td style="border: 1px solid black;">Atsumu</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid black;">Miya</td>
+								<td style="border: 1px solid black;">Osamu</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+					<p>If a user only requires one border that is around the table, then they only need to specify the <code style="background-color: beige; color: #DD6363;">border</code> property for <code style="background-color: beige; color: #DD6363;">&lt;table&gt;</code></p>
+					<p><b>For Example:</b></p>
+					<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+						table {border: 1px solid black;}
+					</code></p>
+					<p><b>Output:</b></p>
+					<div class="card"  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px;">
+						<table style="border: 1px solid black;">
+							<tr>
+								<th>Last Name</th>
+								<th>First Name</th>
+							</tr>
+							<tr>
+								<td>Miya</td>
+								<td>Atsumu</td>
+							</tr>
+							<tr>
+								<td>Miya</td>
+								<td>Osamu</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+					<h4>Table Height and Width</h4>
+					<p>The width and height of a table are determined by the <code style="background-color: beige; color: #DD6363;">width</code> and <code style="background-color: beige; color: #DD6363;">height</code> properties.</p>
+					<p><b>For Example:</b></p>
+					<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+						table {width: 100%;}<br>
+						th {height: 55px;}
+					</code></p>
+					<p><b>Output:</b></p>
+					<div class="card"  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px;">
+						<table style="border: 1px solid black; border-collapse: collapse; width: 100%;">
+							<tr>
+								<th style="border: 1px solid black; height: 55px;">Last Name</th>
+								<th style="border: 1px solid black; height: 55px;">First Name</th>
+							</tr>
+							<tr>
+								<td style="border: 1px solid black;">Miya</td>
+								<td style="border: 1px solid black;">Atsumu</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid black;">Miya</td>
+								<td style="border: 1px solid black;">Osamu</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+					<h4>Table Padding</h4>
+					<p>The <code style="background-color: beige; color: #DD6363;">padding</code> property is used to control the space between the border and content in the table on the <code style="background-color: beige; color: #DD6363;">&lt;th&gt;</code> and <code style="background-color: beige; color: #DD6363;">&lt;td&gt;</code> elements.</p>
+					<p><b>For Example:</b></p>
+					<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+						th, td { padding: 15px; text-align: left;}
+					</code></p>
+					<p><b>Output:</b></p>
+					<div class="card"  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px;">
+						<table style="border: 1px solid black; border-collapse: collapse;">
+							<tr>
+								<th style="border: 1px solid black; padding: 15px; text-align: left;">Last Name</th>
+								<th style="border: 1px solid black; padding: 15px; text-align: left;">First Name</th>
+							</tr>
+							<tr>
+								<td style="border: 1px solid black; padding: 15px; text-align: left;">Miya</td>
+								<td style="border: 1px solid black; padding: 15px; text-align: left;">Atsumu</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid black; padding: 15px; text-align: left;">Miya</td>
+								<td style="border: 1px solid black; padding: 15px; text-align: left;">Osamu</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+					<h4>Horizontal Dividers</h4>
+					<p>The <code style="background-color: beige; color: #DD6363;">border-bottom</code> property adds horizontal dividers to the <code style="background-color: beige; color: #DD6363;">&lt;th&gt;</code> and <code style="background-color: beige; color: #DD6363;">&lt;td&gt;</code> elements.</p>
+					<p><b>For Example:</b></p>
+					<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+						th, td {border-bottom: 1px solid #D6012B;}
+					</code></p>
+					<p><b>Output:</b></p>
+					<div class="card"  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px;">
+						<table style="border-collapse: collapse;">
+							<tr>
+								<th style="border-bottom: 1px solid #D6012B; padding: 10px;">Last Name</th>
+								<th style="border-bottom: 1px solid #D6012B; padding: 10px;">First Name</th>
+							</tr>
+							<tr>
+								<td style="border-bottom: 1px solid #D6012B; padding: 10px;">Miya</td>
+								<td style="border-bottom: 1px solid #D6012B; padding: 10px;">Atsumu</td>
+							</tr>
+							<tr>
+								<td style="border-bottom: 1px solid #D6012B; padding: 10px;">Miya</td>
+								<td style="border-bottom: 1px solid #D6012B; padding: 10px;">Osamu</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+					<h4>Table Color</h4>
+					<p>The <code style="background-color: beige; color: #DD6363;">background-color</code> property specifies the background color of the element it is added to while the <code style="background-color: beige; color: #DD6363;">color</code> property specifies the color of the text in that element.</p>
+					<p><b>For Example:</b></p>
+					<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+						th {background-color: #71FFAF; color: black;}
+						td {background-color: #71EFFF; color: black;}
+					</code></p>
+					<p><b>Output:</b></p>
+					<div class="card"  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px;">
+						<table style="border-collapse: collapse;">
+							<tr>
+								<th style="background-color: #71FFAF; color: black; padding: 10px;">Last Name</th>
+								<th style="background-color: #71FFAF; color: black; padding: 10px;">First Name</th>
+							</tr>
+							<tr>
+								<td style="background-color: #71EFFF; color: black; padding: 10px;">Miya</td>
+								<td style="background-color: #71EFFF; color: black; padding: 10px;">Atsumu</td>
+							</tr>
+							<tr>
+								<td style="background-color: #71EFFF; color: black; padding: 10px;">Miya</td>
+								<td style="background-color: #71EFFF; color: black; padding: 10px;">Osamu</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+					<h4>Veritcal Alignment</h4>
+					<p>The <code style="background-color: beige; color: #DD6363;">vertical-align</code> property sets the vertical alignment (like top, bottom, or middle) of the content in <code style="background-color: beige; color: #DD6363;">&lt;th&gt;</code> and <code style="background-color: beige; color: #DD6363;">&lt;td&gt;</code>. By default, the vertical alignment of the content in a table is middle for both elements.</p>
+					<p><b>For Example:</b></p>
+					<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+						td {height: 45px; vertical-align: bottom;}
+					</code></p>
+					<p><b>Output:</b></p>
+					<div class="card"  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px;">
+						<table style="border: 1px solid black; border-collapse: collapse; width:50%">
+							<tr>
+								<th style="border: 1px solid black;">Last Name</th>
+								<th style="border: 1px solid black;">First Name</th>
+							</tr>
+							<tr>
+								<td style="border: 1px solid black; height: 45px; vertical-align: bottom;">Miya</td>
+								<td style="border: 1px solid black; height: 45px; vertical-align: bottom;">Atsumu</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid black; height: 45px; vertical-align: bottom;">Miya</td>
+								<td style="border: 1px solid black; height: 45px; vertical-align: bottom;">Osamu</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+        </div>
+        </div>
+      </div>
+
+			<div class="footer color-smth">
+	      <h2>Copyright ©</h2>
+	        <h4 style="color: white;">Done By Ritika Ramesh Iyer (B118047), Gitansha Aggarwal (B118029), Priya Pradeep Kumar (B118042)</h4>
+	    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial;
+    padding: 10px;
+  }
+
+  .header {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.collegepravesh.com%2F2016%2F05%2FIIIT_Bhubaneswar_Logo.png&f=1&nofb=1") ;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    background-position: 10px 10px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 50px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #545454;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .leftcolumn {
+    float: left;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+  }
+
+  .rightcolumn {
+    float: right;
+    width: 75%;
+    padding-left: 20px;
+  }
+
+  .fakeimg {
+    background-color:beige;
+    width: 90%;
+    padding: 3px;
+  }
+
+  .card {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  a.toc{
+    color: #C0D0D8 ;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+.color-dg{color:#000;background-color:#545454}
+
+.color-tauve{color:#000;background-color:#988686}
+
+.color-cpenny{color:#000;background-color:#AA6B6B}
+
+.color-fwuzzy{color:#000;background-color:#DD6363}
+
+.color-smth{color:#000;background-color:#FF4C4C}

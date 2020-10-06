@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Background Styling</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body class="color-tauve">
+
+    <div class="header color-smth">
+      <h1 style="text-align: center;">
+        <a name="Main">
+          CSS Background Styling
+        </a>
+      </h1>
+      <p>Use CSS Properties to style Backgrounds, Borders and Margins.</p>
+    </div>
+
+    <div class="topnav">
+      <a style="color:#DD6363" href="./main.html">Home</a>
+      <a style="color:#DD6363" href="./cssText.html">Text CSS</a>
+      <a style="color:#DD6363" href="./cssBackground.html">Background CSS</a>
+      <a style="color:#DD6363" href="./cssListsTables.html">List & Table CSS</a>
+      <a style="color:#DD6363" href="./cssDivLayout.html">Div CSS</a>
+      <a style="color:#DD6363" href="./cssIcons.html">Links & Icons CSS</a>
+      <a style="color:#DD6363" href="./tutorial_assignment.html">Assignment</a>
+      <a style="color:#DD6363" href="./quiz.html">Quiz</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div style="color:#FBF7F4" class="card color-cpenny">
+          <h2>TABLE OF CONTENTS</h2>
+          <h5>On this page, we discuss:</h5>
+         
+          <p>
+            <a class="toc" href="#Main">CSS Background</a><br><br>
+            
+            <a class="toc" href="#cssbrd">CSS Border</a><br><br>
+          
+            <a class="toc" href="#csspd"> CSS Padding</a><br><br>
+            <a class="toc" href="#cssmrg">CSS Margin</a><br>
+          </p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div style="color:#FBF7F4" class="card color-cpenny">
+          <h2>CSS Background Properties</h2>
+          
+            <p>The background properties are used to make the webpage's background look better.</p><br>
+              <h2>
+                <a name="Background Color">CSS background-color</a>
+              </h2>The background-color property specifies the background color of an element.<br>
+              <p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+              <code>
+              body {<br>
+    background-color: violet;<br>
+  } 	<br>
+              h1 {<br>
+              background-color: green;<br>
+               }<br>
+  
+              div {<br>
+              background-color: powderblue;<br>
+              }<br>
+  
+             p {<br>
+             background-color: yellow; <br>
+             }<br>
+  
+              </code></p>
+              Example:<br>
+              <p style="background-color: powderblue; padding: 10px; border-radius: 10px; color: tomato;">This element has a powderblue background color.</p>
+  <br><br>
+              <h2>
+                <a name="Background Image">CSS background-image</a>
+              </h2>
+             The background-image property specifies an image to use as the background of an element.
+  You should mention the name of the image file with extention or provide the image link address. 
+  By default, the image is repeated so it covers the entire element.
+            </p>
+            <p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+            <code>body {<br>
+    background-image: url("iiit.jpg");<br>
+  }</code></p>
+  <p style="background-image: url(bgimg.jpeg); padding: 20px;">This has a background-image.</p><br>
+  If you want to avoid repetition:<br>
+  <p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+  <code>body {<br>
+    background-image: url("iiit.jpg");<br>
+    background-repeat: no-repeat;<br>
+  }</code><br><br>
+  </p>
+ <br>
+  <h2>
+                CSS Background : Shorthand
+              </h2>
+              Instead of writing down each property separately, you can use the shorthand property to write it all in a single line of code.<br><br>
+              <p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+              <code>body {<br>
+    background: #ffffff url("iiit.jpg") no-repeat;<br>
+  }</code></p>
+  
+  
+          </div>
+
+        <div style="color:#FBF7F4" class="card color-cpenny">
+          <h2> <a name= "cssbrd">CSS Borders</a></h2>
+         
+          <p>The CSS border properties allow you to specify the style, width, and color of an element's border.
+            
+<ul>
+  <li>solid - gives a solid border</li>  
+<li>dotted - gives a dotted border</li>
+<li>dashed - gives a dashed border</li>
+
+<li>double -gives a double border</li>
+<li>groove - gives a 3D grooved border; changes with border-color value</li>
+<li>ridge - gives a 3D ridged border; changes with border-color value</li>
+<li>inset - gives a 3D inset border; changes with border-color value</li>
+<li>outset - gives a 3D outset border; changes with border-color value</li>
+<li>none - gives no border</li>
+<li>hidden - gives a hidden border.</li></ul><br>
+<p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+<code>
+p.dotted {border-style: dotted;}<br>
+p.dashed {border-style: dashed;}<br>
+p.solid {border-style: solid;}<br>
+p.double {border-style: double;}<br>
+p.groove {border-style: groove;}<br>
+p.ridge {border-style: ridge;}<br>
+p.inset {border-style: inset;}<br>
+p.outset {border-style: outset;}<br>
+p.none {border-style: none;}<br>
+p.hidden {border-style: hidden;}<br>
+p.mix {border-style: dotted dashed solid double;}
+
+            </code><br></p>
+            For Example: <br>
+<p style="border-style:dotted">This is a dotted border.</p>
+<p style="border-style: double;">This is a double border.</p><br>
+You can also have mixed-style borders.<br>
+<p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+<code>p {<br>
+  border-style: dotted dashed solid double;<br>
+}<br></code></p>
+It will look like this:<br>
+<p style="border-style: dotted dashed solid double; padding: 5px; border-width: 5px;">Mixed-style border</p><br>
+            <h2>
+              <a name="Lorem2">CSS Border Width</a>
+            </h2>
+           The border-width property lets us decide the width of the border of any given p, div or the body itself.
+          </p>
+          <p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+          <code>p.one {<br>
+            border-style: solid;<br>
+            border-width: 5px;<br>
+          }<br>
+          
+          p.two {<br>
+            border-style: solid;<br>
+            border-width: medium;<br>
+          }
+  </code><br></p>
+  For example:<br>
+  <p style="border-style: double; border-width: 10px;"> This has a  double border with border-width of 10px. </p>
+  <p style="border-style: groove; border-width: medium;">This has a groove border with border-width medium.</p>
+  
+  You can also have side-specific border-width :
+<p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+<code>
+
+p{<br>
+  border-style: solid;<br>
+  border-width: 25px 10px 4px 35px;<br>
+}<br>
+</code></p>
+This sets individual side-specific borders with widths 25px top, 10px right, 4px bottom and 35px left.<br><br>
+<h2>
+  CSS border-color
+</h2>
+You can use border-color property to make the borders colourful.<br>
+You can also specify different colours to each side.<br>
+<p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+<code>p {<br>
+border-style: solid;<br>    
+border-color: teal;<br>
+}<br>
+p.individual {<br>
+  border-style: solid;<br>
+  border-color: pink green red yellow;<br>
+}<br></code></p></p>For Example:<br>
+<p style=" border-style: solid; border-color: rebeccapurple; padding: 20px; border-width: 5px;">This has border colour Rebecca Purple.</p><br>
+<p style="border-style: solid; border-color: tomato rgb(40, 158, 129) beige rgb(196, 28, 112);padding: 20px;border-width: 5px;">This has individual border colour for each side.</p>
+<br>
+<h2>
+  CSS border-radius
+</h2>
+You can use border-radius property to make the borders more rounded.<br>
+<p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+<code>p {<br>
+border-style: solid;<br>    
+border-radius: 10px;<br>
+}</code>
+<p style="border-style: solid ; border-radius: 10px;">This has border-radius of 10 px.</p><br>
+<h2>
+              <a name="Lorem2">CSS Borders : Shorthand</a>
+            </h2>
+            Instead of writing down each property separately, you can use the shorthand property to write it all in a single line of code.<br>
+<p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >            
+<code>
+  p {<br>
+    border: 3px dotted blue;<br>
+  }<br>
+</code></p>
+
+
+
+
+        </div>
+        <div style="color:#FBF7F4" class="card color-cpenny">
+          <a name="csspd"><h2>CSS Padding</h2></a>
+         
+            <p>The padding property generates space around an element's content, inside of any defined borders.</p><br>
+              <h2>
+                Individual Padding
+              </h2>This property specifies the individual padding of each side of an element.<br>
+              <p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+              <code>
+                div {<br>
+                  padding-top: 50px;<br>
+                  
+                  padding-right: 30px;<br>
+                  padding-bottom: 50px;<br>
+                  padding-left: 80px;<br>
+                }
+              </code></p>
+  <br>
+              <h2>
+                CSS Padding Shorthand
+              </h2>
+             You can use padding shorthand property to specify padding in a single line of code.
+            </p>
+            <p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+            <code>div {<br>
+              padding: 25px 50px 75px 100px;<br>
+            }<br>
+  </code></p>
+  Or you could simply mention one value, like <b>padding: 50px; </b> and that would set all sides to the same amount of padding.<br>
+  For example:
+  <p style="border-style: solid; padding: 20px;">This has 20 px padding.</p>
+  
+  
+  
+  
+          </div>
+          <div style="color:#FBF7F4" class="card color-cpenny">
+            <a name="cssmrg"><h2>CSS Margin</h2></a>
+        
+              <p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p><br>
+                <h2>
+                  Individual Margin
+                </h2>This property specifies the individual margin of each side of an element.<br>
+                <p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+                <code>
+                  div {<br>
+                    margin-top: 50px;<br>
+                    
+                   margin-right: 30px;<br>
+                    margin-bottom: 50px;<br>
+                   margin-left: 80px;<br>
+                  }
+                </code></p>
+    <br>
+                <h2>
+                  CSS Margin Shorthand
+                </h2>
+               You can use padding shorthand property to specify padding in a single line of code.
+              </p>
+              <p style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;" >
+              <code>div {<br>
+                margin: 75px 50px 45px 130px;<br>
+              }<br>
+    </code></p>
+    Or you could simply mention one value, like <b>margin: 50px; </b> and that would set all sides to the same amount of margin.<br>
+    For example:
+    <p style="border-style: solid; margin: 20px;">This has 20 px margin.</p>
+    
+    
+    
+    
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer color-smth">
+      <h2>Copyright ©</h2>
+      <h4 style="color: white;">Done By Ritika Ramesh Iyer (B118047), Gitansha Aggarwal (B118029), Priya Pradeep Kumar (B118042)</h4>
+    </div>
+
+  </body>
+</html>

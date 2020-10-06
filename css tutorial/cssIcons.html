@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Icons and Links</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+	<head>
+		<title>CSS icons and links</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<body class="color-tauve">
+
+	    <div class="header color-smth">
+	      <h1 style="text-align: center;">
+	        <a name="Main">
+	         	CSS Icons & Links
+	        </a>
+	      </h1>
+	      <p>Using CSS properties to add icons and links</p>
+	    </div>
+
+			<div class="topnav">
+				<a style="color:#DD6363" href="./main.html">Home</a>
+	      <a style="color:#DD6363" href="./cssText.html">Text CSS</a>
+	      <a style="color:#DD6363" href="./cssBackground.html">Background CSS</a>
+	      <a style="color:#DD6363" href="./cssListsTables.html">Lists & Table CSS</a>
+	      <a style="color:#DD6363" href="./cssDivLayout.html">Div CSS</a>
+	      <a style="color:#DD6363" href="./cssIcons.html">Icons & Links CSS</a>
+	      <a style="color:#DD6363" href="./tutorial_assignment.html">Assignment</a>
+	      <a style="color:#DD6363" href="https://forms.gle/ZHz1iKrNYEn3wgi36">Quiz</a>
+	    </div>
+
+	    <div class="row">
+	      <div class="leftcolumn">
+	        <div style="color:#FBF7F4" class="card color-cpenny">
+	          <h2>TABLE OF CONTENTS</h2>
+	          <h5>on this page, we discuss:</h5>
+	          <p>
+	            <a class="toc" href="#icons">icons</a><br>
+	            <a class="toc" href="#links">links</a><br>
+	          </p>
+	        </div>
+	      </div>
+	      <div class="rightcolumn">
+	        <div style="color:#FBF7F4" class="card color-cpenny">
+	            <h2>
+	              <a name="icons">Icons</a>
+	            </h2>
+	            <p>In computing, an icon is a tiny picture displayed on a computer screen in order to help the user navigate a computer system. </p>
+							<br>
+							<h4>How to Add an Icon</h4>
+							<p>The simplest way to add icons to your webpage is through icon libraries such as 'Font Awesome'. Icons are scalable vectors that can customized with the help of CSS; for example their size, color, shadows etc.</p>
+
+							<p>Add the name of the specific icon class to any inline HTML element like <code style="background-color: beige; color: #DD6363;">&lt;i&gt;</code> or <code style="background-color: beige; color: #DD6363;">&lt;span&gt;</code></p>
+							<br>
+							<h4>Font Awesome Icons</h4>
+							<p>for one to be able to use this icon library, they must visit <a style="color: #C0D0D8;" href="https://fontawesome.com/">font awesome</a> and sign in to be able to get the code to add in the <code style="background-color: beige; color: #DD6363;">&lt;head&gt;</code> section of their HTML page.</p>
+
+							<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+								&lt;script src="https://kit.fontawesome.com/yourcode.js"&gt;&lt;/script&gt;
+							</code></p>
+
+							<br>
+							<p><b>For Example:</b></p>
+
+							<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+								&lt;i class="fas fa-cloud" style="color: #C0D0D8;"&gt;&lt;/i&gt;<br>
+								&lt;i class="fas fa-heart" style="font-size:24px;color:pink;"&gt;&lt;/i&gt;<br>
+								&lt;i class="fas fa-car" style="font-size:48px;color:red;"&gt;&lt;/i&gt;<br>
+								&lt;i class="fas fa-sync-alt fa-spin"&gt;&lt;/i&gt;<br>
+								&lt;i class="fas fa-bars">&lt;/i&gt;<br>
+							</code></p>
+
+							<br><p><b>Output:</b></p>
+							<div class="card"  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px;">
+								<i class="fas fa-cloud" style="color: #C0D0D8;"></i>
+								<i class="fas fa-heart" style="font-size:24px;color:pink;"></i>
+								<i class="fas fa-car" style="font-size:48px;color:red;"></i>
+								<i class="fas fa-sync-alt fa-spin"></i>
+								<i class="fas fa-bars"></i>
+								<br>
+							</div>
+
+							<br>
+						</div>
+
+						<div style="color:#FBF7F4" class="card color-cpenny">
+							<h2>
+	              <a name="links">Links</a>
+	            </h2><br>
+	            <p>One can use CSS properties to style links in different ways to make them look more appealing on your webpage.</p>
+							<br>
+							<h4>Styling Links</h4>
+							<p>they can be styled with any CSS property such as <code style="background-color: beige; color: #DD6363;">color</code>, <code style="background-color: beige; color: #DD6363;">background-color</code>, <code style="background-color: beige; color: #DD6363;">font-size</code>, etc.</p>
+							<p><b>For Example:</b></p>
+							<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+								a {color: #999999;}
+							</code></p>
+							<br>
+							<p><b>Output:</b></p>
+							<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+								<a style="color: #999999;" href="https://vleague.tv/">this is a link</a>
+							</code></p>
+							<br>
+							<p>In addition, links can be styled differently depending on what state they are in.</p>
+							<p>The four links states are:</p>
+							<ul type="square">
+								<li><code style="background-color: beige; color: #DD6363;">a:link</code> - a normal, unvisited link</li>
+								<li><code style="background-color: beige; color: #DD6363;">a:visited</code> - a link the user has visited</li>
+								<li><code style="background-color: beige; color: #DD6363;">a:hover</code> - a link when the user hovers their mouse over it</li>
+								<li><code style="background-color: beige; color: #DD6363;">a:active</code> - a link the moment it is clicked</li>
+							</ul>
+							<p><b>For Example:</b></p>
+								<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+									a:link {color: #DA1800;}<br>
+									a:visited {color: #88FF00;}<br>
+									a:hover {color: #47FFBE;}<br>
+									a:active {color: #430D61;}
+								</code></p>
+								<p>The order of setting styles when one uses several link states are:</p>
+								<ul type="square">
+									<li><code style="background-color: beige; color: #DD6363;">a:hover</code> MUST come after <code style="background-color: beige; color: #DD6363;">a:link</code> and <code style="background-color: beige; color: #DD6363;">a:visited</code></li>
+									<li><code style="background-color: beige; color: #DD6363;">a:active</code> MUST come after <code style="background-color: beige; color: #DD6363;">a:hover</code></li>
+								</ul>
+								<br>
+								<h4>Link Text Decoration Property</h4>
+								<p>The <code style="background-color: beige; color: #DD6363;">text-decoration</code> as the name implies, is used to decorate the link text. In most occasions it is used to remove the underline from links.</p>
+								<p><b>For Example:</b></p>
+								<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+									a {text-decoration: none;}
+								</code></p>
+								<br>
+								<p><b>Output:</b></p>
+								<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+									<a style="color: #C0D0D8; text-decoration: none;" href="https://vleague.tv/">this is a link</a>
+								</code></p>
+
+								<br>
+								<h4>Background Color</h4>
+								<p>The <code style="background-color: beige; color: #DD6363;">background-color</code> property can be used to specify a background color for links.</p>
+								<p><b>For Example:</b></p>
+								<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+								a:link {background-color: #2FFF80;}<br>
+								a:visited {background-color: #0A33AA;}<br>
+								a:hover {background-color: #9469A8;}<br>
+								a:active {background-color: #D80505;}
+							</code></p>
+							<br>
+
+							<h4>Link Buttons</h4>
+							<p>Creating link buttons are possible by combining several CSS properties together to ultimately display links as boxes or buttons</p>
+							<p><b>For Example:</b></p>
+							<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+								a {<br>
+									background-color: #42D6C5;<br>
+									color: white;<br>
+									padding: 14px 25px;<br>
+									text-align: center;<br>
+									text-decoration: none;<br>
+									display: inline-block;<br>
+								}
+							</code></p>
+							<br>
+							<p><b>Output:</b></p>
+							<p  style="background-color: beige; color: #DD6363; border-radius: 10px; padding: 10px; font-size: large;"><code>
+								<a style="background-color: #42D6C5; color: white; padding: 14px 25px; text-align: center; text-decoration: none; display: inline-block;" href="https://vleague.tv/">this is a link</a>
+							</code></p>
+							<br>
+
+	        </div>
+	        </div>
+	        </div>
+
+					<div class="footer color-smth">
+		      <h2>Copyright ©</h2>
+		        <h4 style="color: white;">Done By Ritika Ramesh Iyer (B118047), Gitansha Aggarwal (B118029), Priya Pradeep Kumar (B118042)</h4>
+		    </div>
+
+</body>
+</html>
